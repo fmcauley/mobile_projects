@@ -2,6 +2,6 @@
 
 <ul>
   <% @projects.each do |project| %>
-  <li><%=project%></li>
+<li><strong><%=project.name%></strong> - <%=project.description%> Build: <%=project.target_build%></li>
 <% end %>
 </ul>
